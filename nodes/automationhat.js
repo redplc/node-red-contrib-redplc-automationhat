@@ -53,7 +53,7 @@ module.exports = function(RED) {
 		node.setai = false;
 		node.setdi = false;
 		node.setdo = false;
-		node.factor = 2 * 940 / 120;
+		node.factor = 940 / 120;
 			
 		node.statustxt = "";
 
@@ -129,7 +129,7 @@ module.exports = function(RED) {
 							aival[0] = Number((aival[0] * node.factor).toFixed(0)) * node.factor0 + node.offset0;
 							aival[1] = Number((aival[1] * node.factor).toFixed(0)) * node.factor1 + node.offset1;
 							aival[2] = Number((aival[2] * node.factor).toFixed(0)) * node.factor2 + node.offset2;
-							aival[3] = aival[3] * 2 * node.factor3 + node.offset3;
+							aival[3] = aival[3] * node.factor3 + node.offset3;
 							node.store.set(node.tagnameai, aival);
 							syslib.setStatus(node, node.statustxt);
 						}

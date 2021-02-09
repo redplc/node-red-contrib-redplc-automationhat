@@ -1,6 +1,6 @@
 {
   "name": "node-red-contrib-redplc-automationhat",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "redPlc Automation HAT Module",
 
   "dependencies": {

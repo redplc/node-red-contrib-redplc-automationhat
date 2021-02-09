@@ -1,12 +1,12 @@
 # node-red-contrib-redplc-automationhat
 
-redPlc Automation HAT Module.<br>
+redPlc Node-Red node for Automation HAT Module.<br>
 
 ## Install
 
-[redPlc use this module node. Install redPlc.](https://www.npmjs.com/package/node-red-contrib-redplc)
+[For using this node with Ladder-Logic install redPlc.](https://www.npmjs.com/package/node-red-contrib-redplc)
 
-[If you use this node for other nodes install this.](https://www.npmjs.com/package/node-red-contrib-redplc-module)
+[If you use this node with other nodes, install module nodes.](https://www.npmjs.com/package/node-red-contrib-redplc-module)
 
 Install with Node-Red Palette Manager or npm command:
 ```

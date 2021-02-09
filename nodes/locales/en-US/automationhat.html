@@ -36,7 +36,7 @@
             <dd>bit 8 -> Led POWER</dd>
             <dt>IA </b><i>adr[index]</i> Analog Input<span class="property-type">number</span></dt>
             <dd>Array index 0..3 <- ADC1..ADC4 </dd>
-            <dd>ADC1-3: 10.000V is equal 10000</dd>
+            <dd>ADC1-3: Value is in mV</dd>
             <dd>ADC1-3: Max. Input +25V</dd>
             <dd>ADC4: Max. Input +3.3V</dd>
         </dl>
@@ -56,6 +56,7 @@
         Conversion resolution and speed is<br>
         11bit @1ms.<br>
         Measure range 0..24V -> 16mV step.<br>
+        Scaled Value = Input (mV) * Factor + Offset.<br>
         Brightness of leds can be set (0 turns off).<br>
         <p class="form-tips">
             This node works only on Raspberry Pi.<br>

@@ -121,7 +121,7 @@ module.exports = function(RED) {
 					node.store.set(node.tagnamedi, dival);
 
 					if (!node.disableai) {
-						var aival = sysmoduleai.updateAI();
+						var aival = sysmoduleai.updateAI(0);
 
 						if (aival === undefined)
 							node.iserror = syslib.outError(node, "update AI", "error on update AI");
